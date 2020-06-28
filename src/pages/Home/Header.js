@@ -8,6 +8,7 @@ import launch from "static/images/icons/launch-icon.svg";
 export default function Header() {
   return (
     <div className="header">
+      <div className="header-content">
       <div className="title-container">
         <small className="year">2019</small>
         <h1 className="main-title">Nomadian.</h1>
@@ -24,42 +25,43 @@ export default function Header() {
           <Button className="join-button">Join Live Project</Button>
           <Button className="more-button">Learn More</Button>
         </div>
-        <div className="steps-container">
-          <Row gutter={0} className="grid-parent">
-            <Col className="grid-child" xs={12} md={4}>
-              <Card className="step-card">
-                <img src={join} alt="Join" className="step-icon" />
-                <p className="step-description">
-                  <b className="step-name">Join</b>
-                  We have exciting new projects tackling various domains
-                </p>
-              </Card>
-            </Col>
-            <Col className="grid-child" xs={12} md={4}>
-              <Card className="step-card">
-                <img
-                  src={collaborate}
-                  alt="Collaborate"
-                  className="step-icon"
-                />
-                <p className="step-description">
-                  <b className="step-name">Collaborate</b>
-                  We're all about teamwork, work towards a shared goal
-                </p>
-              </Card>
-            </Col>
-            <Col className="grid-child" xs={12} md={4}>
-              <Card className="step-card">
-                <img src={launch} alt="Launch" className="step-icon" />
-                <p className="step-description">
-                  <b className="step-name">Launch</b>
-                  You've helped build something worth sharing with the world!
-                </p>
-              </Card>
-            </Col>
-          </Row>
-        </div>
       </div>
+      </div>
+      <div className="steps-container">
+      <Row gutter={0} className="grid-parent">
+        <Col className="grid-child" xs={24} md={8}>
+          <Card className="step-card" style={{borderLeft: 'none'}}>
+            <img src={join} alt="Join" className="step-icon" />
+            <p className="step-description">
+              <b className="step-name">Join. </b>
+              We have exciting new projects tackling various domains
+            </p>
+          </Card>
+        </Col>
+        <Col className="grid-child" xs={24} md={8}>
+          <Card className="step-card">
+            <img
+              src={collaborate}
+              alt="Collaborate"
+              className="step-icon"
+            />
+            <p className="step-description">
+              <b className="step-name">Collaborate. </b>
+              We're all about teamwork, work towards a shared goal
+            </p>
+          </Card>
+        </Col>
+        <Col className="grid-child" xs={24} md={8}>
+          <Card className="step-card">
+            <img src={launch} alt="Launch" className="step-icon" />
+            <p className="step-description">
+              <b className="step-name">Launch. </b>
+              You've helped build something worth sharing with the world!
+            </p>
+          </Card>
+        </Col>
+      </Row>
+    </div>
     </div>
   );
 }

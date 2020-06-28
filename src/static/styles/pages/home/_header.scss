@@ -1,14 +1,91 @@
 .header {
+  margin-top: 80px;
+  .header-content{
+    @include msm{
+      min-height: calc(100vh - 80px);
+    }
+  }
   .title-container {
+    @include sub-section-container;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 12px;
+    @include md{
+      display: block;
+      margin: unset;
+      margin-bottom: 32px;
+    }
     .year {
+      display: block;
+      font-size: 10px;
+      margin-left: 1px;
+      margin-bottom: -8px;
+      letter-spacing: 1.4px;
+      @include msm{
+        font-size: 12px;
+        margin-left: 6px;
+        margin-bottom: -14px;
+      }
+      @include md{
+        font-size: 13px;
+        margin-left: 18px;
+        margin-bottom: -24px;
+        letter-spacing: 2.4px;
+      }
+      @include xl{
+        font-size: 14px;
+        margin-left: 30px;
+        margin-bottom: -40px;
+      }
     }
     .main-title {
+      font-size: 32px;
+      letter-spacing: 2px;
+      width: fit-content;
+      @include msm{
+        font-size: 48px;
+      }
+      @include md{
+        font-size: 80px;
+        letter-spacing: 4px;
+      }
+      @include xl{
+        font-size: 140px;
+        letter-spacing: 8px;
+      }
     }
     .slogan {
+      text-align: right;
+      font-size: 12px;
+      margin-right: 12px;
+      margin-top: -8px;
+      @include msm{
+        font-size: 13px;
+        margin-right: 16px;
+        margin-top: -12px;
+      }
+      @include md{
+        font-size: 14px;
+        margin-right: 28px;
+        margin-top: -26px;
+      }
+      @include xl{
+        font-size: 21px;
+        margin-right: 50px;
+        margin-top: -32px;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
     }
   }
   .description-container {
       @include sub-section-container;
+      margin-bottom: 24px;
+      @include md{
+        margin-bottom: 64px;
+      }
     .main-description {
         max-width: 400px;
         margin: auto;
@@ -27,17 +104,18 @@
         }
         @include xl{
             max-width: 700px;
+            font-size: 24px;
         }
         @include xxl{
-            max-width: 800px;
+            max-width: 1100px;
         }
     }
     .buttons-container{
       display: flex;
       justify-content: center;
-      margin-top: 12px;
+      margin: 12px 0;
       @include md{
-        margin-top: 24px;
+        margin-top: 32px;
       }
         .join-button{
             @include primary-button;
@@ -55,10 +133,48 @@
     .grid-parent {
       .grid-child {
         .step-card {
+          border: 1px solid #ffffff;
+          background: transparent;
+          border-radius: 0;
+          border-right: none;
+          height: 100%;
+          .ant-card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+          }
           .step-icon {
+            margin: auto;
+            margin-bottom: 24px;
+            width: 40px;
+            @include msm{
+              width: 56px;
+            }
+            @include md{
+              width: 60px;
+            }
+            @include xl{
+              width: 80px;
+            }
           }
           .step-description {
+            text-align: center;
+            font-size: 14px;
+            font-family: $muli-font;
+            color: $text-grey;
+            display: block;
+            margin-top: auto;
+            @include msm{
+              font-size: 16px;
+              max-width: 460px;
+            }
+            @include md{
+            font-size: 20px;
+            max-width: 440px;
+            }
             .step-name {
+              color: white;
             }
           }
         }
