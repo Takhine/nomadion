@@ -1,19 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 // Components
 import Navbar from "./Navbar";
 import { Layout, Menu, Button } from 'antd';
 import 'static/styles/main.scss';
 import people from 'static/images/icons/people-icon.svg';
 import logo from 'static/images/media/logo.svg';
+import darkLogo from 'static/images/media/dark-logo.svg';
+
 
 const { Header, Content, Footer } = Layout;
 
 export default function Container(props) {
+  const [dark, setTheme] = useState(false)
+  window.onscroll = () =>{
+    const nav = document.querySelector('#nav');
+    if(window.scrollY <=200) {
+      nav.className="dark-navbar";
+      setTheme(false);
+    }
+    else{
+      nav.className="light-navbar"
+      setTheme(true);
+
+    }
+  }
   return (
     <Layout className="layout" style={{background: 'unset'}}>
-    <Header className="navbar" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+    <Header id="nav" className="dark-navbar">
       <div className="logo-container">
-      <img className="logo" src={logo} alt="Contribe" />
+      <img className="logo" style={dark?{display: 'block'}:{display: 'none'}} src={darkLogo} alt="Contribe" />
+      <img className="logo" style={dark?{display: 'none'}:{display: 'block'}} src={logo} alt="Contribe" />
+
       </div>
       <Menu className="nav-menu" theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
         <Menu.Item key="1">Home</Menu.Item>

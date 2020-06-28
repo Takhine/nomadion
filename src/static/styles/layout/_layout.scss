@@ -1,11 +1,13 @@
 .layout{
     background: unset;
-    .navbar{
+    .dark-navbar{
         @include sub-section-container;
         background-color: $dark-black;
+        transition: background-color 0.4s ease-out;
         position: fixed;
         padding-top: 0;
-        z-index: 1;
+        padding-bottom: 0;
+        z-index: 2000;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -35,6 +37,20 @@
                     vertical-align: middle;
                     margin-left: 6px;
                 }
+            }
+        }
+    }
+    .light-navbar{
+        @extend .dark-navbar;
+        background-color: white;
+        color: $primary-black;
+        transition: background-color 0.4s ease-out;
+        .nav-menu{
+            .ant-menu-item.ant-menu-item-only-child.ant-menu-item-selected{
+                color: white;
+            }
+            .ant-menu-item.ant-menu-item-only-child{
+                color: $primary-black;
             }
         }
     }

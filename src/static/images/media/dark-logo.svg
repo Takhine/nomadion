@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135.514" height="150.376" viewBox="0 0 135.514 150.376">
+  <defs>
+    <filter id="Ellipse_6" x="0" y="21.044" width="129.332" height="129.332" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_8" x="25.915" y="78.423" width="109.599" height="56.682" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_9" x="1.5" y="61.686" width="91.597" height="71.221" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_10" x="34.088" y="0" width="86.846" height="92.577" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1990" data-name="Group 1990" transform="translate(-112 -27.354)">
+    <g transform="matrix(1, 0, 0, 1, 112, 27.35)" filter="url(#Ellipse_6)">
+      <g id="Ellipse_6-2" data-name="Ellipse 6" transform="translate(9 27.04)" fill="none" stroke="#ff1e26" stroke-width="3">
+        <circle cx="55.666" cy="55.666" r="55.666" stroke="none"/>
+        <circle cx="55.666" cy="55.666" r="54.166" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 112, 27.35)" filter="url(#Path_8)">
+      <path id="Path_8-2" data-name="Path 8" d="M0,35.682H88.6L73.527,6.864,52.338,0Z" transform="translate(33.42 81.92)" fill="#202020"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 112, 27.35)" filter="url(#Path_9)">
+      <path id="Path_9-2" data-name="Path 9" d="M0,50.221,27.081,0,70.6,14.024l-51.972,36.2Z" transform="translate(9 66.19)" fill="#202020"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 112, 27.35)" filter="url(#Path_10)">
+      <path id="Path_10-2" data-name="Path 10" d="M0,50.045,25.635.016,26.578,0,64.626,70.459Z" transform="translate(40.82 9.5) rotate(1)" fill="#202020"/>
+    </g>
+  </g>
+</svg>
