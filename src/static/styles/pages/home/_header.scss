@@ -1,0 +1,68 @@
+.header {
+  .title-container {
+    .year {
+    }
+    .main-title {
+    }
+    .slogan {
+    }
+  }
+  .description-container {
+      @include sub-section-container;
+    .main-description {
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        color: $text-grey;
+        font-weight: $light-font;
+        letter-spacing: 1px;
+        font-size: 13px;
+        @include msm{
+            max-width: 560px;
+            font-size: 14px;
+        }
+        @include md{
+            max-width: 600px;
+            font-size: $title-font;
+        }
+        @include xl{
+            max-width: 700px;
+        }
+        @include xxl{
+            max-width: 800px;
+        }
+    }
+    .buttons-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      @include md{
+        margin-top: 24px;
+      }
+        .join-button{
+            @include primary-button;
+            margin-right: 4px;
+            @include md{
+              margin-right: 12px;
+            }
+        }
+        .more-button{
+            @include outlined-button;
+        }
+    }
+  }
+  .steps-container {
+    .grid-parent {
+      .grid-child {
+        .step-card {
+          .step-icon {
+          }
+          .step-description {
+            .step-name {
+            }
+          }
+        }
+      }
+    }
+  }
+}

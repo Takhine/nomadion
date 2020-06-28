@@ -64,3 +64,70 @@
          @content;
      }
  }
+
+
+//  Buttons
+
+@mixin primary-button {
+    color: white;
+    font-family: "Muli", "Poppins", serif, sans-serif;
+    background-color: $primary-red;
+    padding: 4px 6px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    border: 1px solid $primary-red;
+    font-size: 13px;
+    @include md{
+        font-size: 14px;
+    }
+}
+
+@mixin outlined-button {
+    color: white;
+    font-family: "Muli", "Poppins", serif, sans-serif;
+    background-color: transparent;
+    padding: 4px 6px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    border-radius: 2px;
+    font-size: 13px;
+    @include md{
+        font-size: 14px;
+    }
+}
+
+// Containers
+
+@mixin main-container{
+
+}
+
+@mixin section-container{
+    padding: 16px;
+    @include msm{
+        padding: 24px 32px;
+    }
+    @include mmd{
+        padding: 32px 80px;
+    }
+    @include xl{
+        padding: 32px 120px;
+    }
+}
+
+
+@mixin sub-section-container {
+    padding: 16px;
+    @include msm{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @include mmd{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @include xl{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
