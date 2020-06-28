@@ -1,0 +1,35 @@
+// Font-family
+$main-font:'Poppins', serif, sans-serif;
+
+// Font Weights
+$light-font:200;
+$regular-font:400;
+$bold-font:600;
+// Base Font
+$base-font-size:16px;
+$base-line-height:1.4;
+// Font Sizes
+$xxlarge-font:54px;
+$xlarge-font:40px;
+$large-font: 25px;
+$title-font:18px;
+$default-font:16px;
+$small-font: 14px;
+$xsmall-font:12px;
+$xxsmall-font: 10px;
+$xxxsmall-font: 8px;
+
+// Border Radius
+$card-border-radius:2px;
+$tag-border-radius:8px;
+$button-border-radius:4px;
+
+// Box Shadows
+$main-box-shadow:0px 3px 6px rgba(0,0,0,0.06);
+$light-box-shadow:1px 1px 7px -2px $primary-red;
+
+// Gutters
+$card-gutter: 16px;
+
+// Transition time
+$transition-main:0.4s;

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="101" viewBox="0 0 103 101">
+  <defs>
+    <filter id="Rectangle_1915" x="31" y="0" width="72" height="101" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_6" x="0" y="16" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_1916" x="55" y="47" width="45" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" dy="-4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1995" data-name="Group 1995" transform="translate(-231 -1110)">
+    <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Rectangle_1915)">
+      <rect id="Rectangle_1915-2" data-name="Rectangle 1915" width="54" height="83" transform="translate(40 6)" fill="#fff"/>
+    </g>
+    <path id="Polygon_5" data-name="Polygon 5" d="M29,0,58,58H0Z" transform="translate(298 1129) rotate(90)" fill="#ff1e26"/>
+    <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Polygon_6)">
+      <path id="Polygon_6-2" data-name="Polygon 6" d="M18,0,36,36H0Z" transform="translate(45 24) rotate(90)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Rectangle_1916)">
+      <rect id="Rectangle_1916-2" data-name="Rectangle 1916" width="27" height="29" transform="translate(67 60)" fill="#ff1e26"/>
+    </g>
+  </g>
+</svg>
