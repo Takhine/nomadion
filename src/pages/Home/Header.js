@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Row, Col, Card } from "antd";
+import FadeIn from 'react-fade-in';
 // Images
 import join from "static/images/icons/join-icon.svg";
 import collaborate from "static/images/icons/collaborate-icon.svg";
@@ -10,17 +11,25 @@ export default function Header() {
     <div className="header">
       <div className="header-content">
       <div className="title-container">
-        <small className="year">2019</small>
-        <h1 className="main-title">Nomadian.</h1>
+      <FadeIn delay="200">
+      <small className="year">2019</small>
+      </FadeIn>
+      <FadeIn transitionDuration="800">
+      <h1 className="main-title">Nomadian.</h1>
+      </FadeIn>
+        <FadeIn delay="200">
         <p className="slogan">A team of teams</p>
+        </FadeIn>
       </div>
       <div className="description-container">
-        <h3 className="main-description">
-          We work on seemingly independent projects that are each led by a
-          dedicated group & supported by an entire community of contributors,
-          driven by the desire to tap into the massive potential for good in the
-          world.
-        </h3>
+      <FadeIn delay="300">
+      <h3 className="main-description">
+      We work on seemingly independent projects that are each led by a
+      dedicated group & supported by an entire community of contributors,
+      driven by the desire to tap into the massive potential for good in the
+      world.
+    </h3>
+      </FadeIn>
         <div className="buttons-container">
           <Button className="join-button">Join Live Project</Button>
           <Button className="more-button">Learn More</Button>

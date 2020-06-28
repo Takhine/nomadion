@@ -102,6 +102,10 @@
     }
 }
 
+@mixin rounded-primary-button {
+    @include primary-button;
+    border-radius: 24px;
+}
 // Containers
 
 @mixin main-container{

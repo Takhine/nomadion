@@ -1,0 +1,45 @@
+.layout{
+    background: unset;
+    .navbar{
+        @include sub-section-container;
+        background-color: $dark-black;
+        position: fixed;
+        padding-top: 0;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .logo-container{
+            .logo{
+                width: 50px;
+            }
+        }
+        .nav-menu{
+            background-color: transparent;
+            display: none;
+            @include mmd{
+                display: flex;
+            }
+            .ant-menu-item-selected{
+                background-color: $primary-red;
+            }
+            .contribute-button{
+                @include rounded-primary-button;
+                padding: 2px 13px !important;
+                height: 30px !important;
+                img{
+                    width: 20px;
+                }
+                span{
+                    height: 100%;
+                    vertical-align: middle;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: $dark-black;
+        color: white;
+    }
+}
