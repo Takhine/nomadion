@@ -23,7 +23,7 @@
                 display: flex;
             }
             .ant-menu-item-selected{
-                background-color: $primary-red;
+                background-color: transparent;
             }
             .contribute-button{
                 @include rounded-primary-button;
@@ -47,7 +47,7 @@
         transition: background-color 0.4s ease-out;
         .nav-menu{
             .ant-menu-item.ant-menu-item-only-child.ant-menu-item-selected{
-                color: white;
+                color: $primary-red;
             }
             .ant-menu-item.ant-menu-item-only-child{
                 color: $primary-black;
@@ -57,5 +57,9 @@
     .footer{
         background-color: $dark-black;
         color: white;
+        .heart{
+            width: 20px;
+            margin: 0 2px;
+        }
     }
 }

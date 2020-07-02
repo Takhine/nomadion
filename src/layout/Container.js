@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 // Components
-import Navbar from "./Navbar";
 import { Layout, Menu, Button } from 'antd';
 import 'static/styles/main.scss';
 import people from 'static/images/icons/people-icon.svg';
 import logo from 'static/images/media/logo.svg';
 import darkLogo from 'static/images/media/dark-logo.svg';
+import heart from 'static/images/media/heart.png';
 
 
 const { Header, Content, Footer } = Layout;
@@ -28,8 +28,8 @@ export default function Container(props) {
     <Layout className="layout" style={{background: 'unset'}}>
     <Header id="nav" className="dark-navbar">
       <div className="logo-container">
-      <img className="logo" style={dark?{display: 'block'}:{display: 'none'}} src={darkLogo} alt="Contribe" />
-      <img className="logo" style={dark?{display: 'none'}:{display: 'block'}} src={logo} alt="Contribe" />
+      <img className="logo" style={dark?{display: 'block'}:{display: 'none'}} src={darkLogo} alt="Nomadion" />
+      <img className="logo" style={dark?{display: 'none'}:{display: 'block'}} src={logo} alt="Nomadion" />
 
       </div>
       <Menu className="nav-menu" theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
@@ -42,7 +42,7 @@ export default function Container(props) {
     <Content>
       {props.children}
     </Content>
-    <Footer className="footer" style={{ textAlign: 'center' }}>Made with Love by Contribe ©2020</Footer>
+    <Footer className="footer" style={{ textAlign: 'center' }}>Made with <img src={heart} className="heart" alt="Heart" /> by Nomadion © 2020</Footer>
   </Layout>
   );
 }

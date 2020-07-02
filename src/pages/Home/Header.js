@@ -19,7 +19,7 @@ export default function Header() {
             <FadeIn transitionDuration="800">
               <h1 className="main-title">
                 <span>Nomad</span>
-                <span className="dark-background">ian.</span>
+                <span className="dark-background">ion.</span>
               </h1>
             </FadeIn>
             <FadeIn delay="600">
