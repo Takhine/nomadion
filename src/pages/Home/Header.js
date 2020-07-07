@@ -47,7 +47,7 @@ export default function Header() {
       <div className="steps-container">
         <Row gutter={0} className="grid-parent">
           <Col className="grid-child" xs={24} md={8}>
-            <Card className="step-card" style={{ borderLeft: "none" }}>
+            <Card hoverable={true} className="step-card" style={{ borderLeft: "none" }}>
               <img src={join} alt="Join" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Join. </b>
@@ -56,7 +56,7 @@ export default function Header() {
             </Card>
           </Col>
           <Col className="grid-child" xs={24} md={8}>
-            <Card className="step-card">
+            <Card hoverable={true} className="step-card">
               <img src={collaborate} alt="Collaborate" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Collaborate. </b>
@@ -65,7 +65,7 @@ export default function Header() {
             </Card>
           </Col>
           <Col className="grid-child" xs={24} md={8}>
-            <Card className="step-card">
+            <Card hoverable={true} className="step-card">
               <img src={launch} alt="Launch" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Launch. </b>
