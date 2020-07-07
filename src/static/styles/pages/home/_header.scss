@@ -27,6 +27,9 @@
       @include xl {
         right: 32px 120px;
       }
+      @include xxl{
+        left: 50%;
+      }
       -moz-animation: bounce 2s infinite;
       -webkit-animation: bounce 2s infinite;
       animation: bounce 2s infinite;
