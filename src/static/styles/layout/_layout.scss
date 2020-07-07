@@ -24,6 +24,16 @@
             @include mmd{
                 display: flex;
             }
+            .selected{
+                font-weight: 600;
+                color: white;
+                opacity: 1;
+                .pointer{
+                    width: 10px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                }
+            }
             .ant-menu-item-selected{
                 background-color: transparent;
             }
@@ -48,6 +58,15 @@
         color: $primary-black;
         transition: background-color 0.4s ease-out;
         .nav-menu{
+            .ant-menu-item{
+            a{
+                color: $dark-blue;
+            }
+            }
+            .selected{
+                color: $dark-blue;
+                font-weight: 600;
+            }
             .ant-menu-item.ant-menu-item-only-child.ant-menu-item-selected{
                 color: $dark-blue;
                 font-weight: 600;
