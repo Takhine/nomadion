@@ -1,4 +1,21 @@
-.about-section{
-    background-color: white;
-    min-height: 100vh;
+#homepage{
+    .about-section{
+        background-color: white;
+        min-height: 100vh;
+        @include sub-section-container;
+        .heading{
+            color: $dark-blue;
+            margin: 12px 0;
+            font-weight: 800;
+            font-size: 18px;
+            text-align: center;
+            @include md {
+              font-size: 22px;
+              margin-bottom: 24px;
+            }
+            @include xl{
+                font-size: 28px;
+            }
+        }
+    }
 }

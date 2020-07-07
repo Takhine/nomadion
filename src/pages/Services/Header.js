@@ -25,29 +25,29 @@ export default function Header() {
             </FadeIn>
             <div className="tags-container">
               <div className="tags-row">
-                <Tag className="blue-tag">Blog Site</Tag>
-                <Tag className="blue-tag">E - Commerce</Tag>
-                <Tag className="blue-tag">CMS</Tag>
-                <Tag className="blue-tag">LMS</Tag>
-                <Tag className="blue-tag">CRM</Tag>
+                <Tag className="blue-tag tag">Blog Site</Tag>
+                <Tag className="blue-tag tag">E - Commerce</Tag>
+                <Tag className="blue-tag tag">CMS</Tag>
+                <Tag className="blue-tag tag">LMS</Tag>
+                <Tag className="blue-tag tag">CRM</Tag>
               </div>
-              <div className="tags-container">
-                <Tag className="white-tag">Hybrid Apps</Tag>
+              <div className="tags-row">
+                <Tag className="white-tag tag">Hybrid Apps</Tag>
                 <Tag className="white-tag">Native Apps</Tag>
               </div>
-              <div className="tags-container">
-                <Tag className="bordered-tag">Social Media</Tag>
-                <Tag className="bordered-tag">SEO</Tag>
-                <Tag className="bordered-tag">Recruitment</Tag>
-                <Tag className="bordered-tag">Legals</Tag>
+              <div className="tags-row">
+                <Tag className="bordered-tag tag">Social Media</Tag>
+                <Tag className="bordered-tag tag">SEO</Tag>
+                <Tag className="bordered-tag tag">Recruitment</Tag>
+                <Tag className="bordered-tag tag">Legals</Tag>
               </div>
-              <div className="tags-container">
-                <Tag className="underlined-tag">Startup Consultancy</Tag>
+              <div className="tags-row">
+                <Tag className="primary-tag tag">Startup Consultancy</Tag>
               </div>
             </div>
           </Col>
           <Col className="image-column" xs={24} md={8} lg={12}>
-            <div className="header-image-container">
+            <div className="image-container">
               <img
                 src={computer}
                 className="header-image"

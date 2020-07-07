@@ -1,3 +1,54 @@
 .expertise{
     background-color: $section-blue;
+    @include sub-section-container;
+    padding-top: 64px;
+
+    .service-block{
+        .service-heading{
+            font-weight: 400;
+            letter-spacing: 1.3px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            text-align: center;
+            @include md {
+              font-size: $title-font;
+            }
+            @include xl{
+                font-size: 24px;
+            }
+        }
+        .service-card-container{
+            .service-row{
+                margin: 32px 0;
+                .service-col{
+                    .white-card{
+                        @include card(white, black, $light-blue);
+                    }
+                    .blue-card{
+                        @include card($light-blue, white, white);
+                    }
+                    .service-card{
+                        .ant-card-body{
+                            min-height: 250px;
+                        }
+                        .service-name{
+                            text-align: center;
+                            color: inherit;
+                            font-size: 14px;
+                            @include md {
+                              font-size: 16px;
+                            }
+                            @include xl{
+                                font-size: 20px;
+                            }
+                        }
+                        .service-description{
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }

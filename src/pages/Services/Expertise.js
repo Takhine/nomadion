@@ -24,8 +24,8 @@ const services = [
   },
   {
     heading: "The Virtual Store",
-    md: 8,
-    lg: 8,
+    md: 24,
+    lg: 24,
     cardStyles: "white-card",
     subServices: [
       {
@@ -37,7 +37,7 @@ const services = [
   {
     heading: "Online Business Cards",
     md: 12,
-    lg: 8,
+    lg: 12,
     cardStyles: "white-card",
     subServices: [
       {
@@ -73,15 +73,15 @@ export default function Expertise() {
       {services.map((service) => (
         <div key={service.heading} className="service-block">
           <h2 className="service-heading">{service.heading}</h2>
-          <div className="service-card-containers">
-            <Row className="service-row">
+          <div className="service-card-container">
+            <Row className="service-row" gutter={8}>
               {service.subServices.map((subService) => (
                 <Col
                   key={subService.name}
                   className="service-col"
                   xs={24}
                   md={service.md}
-                  lg={service.md}
+                  lg={service.lg}
                 >
                   <Card className={`service-card ${service.cardStyles}`}>
                     <h4 className="service-name">{subService.name}</h4>
