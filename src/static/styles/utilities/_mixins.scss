@@ -71,11 +71,11 @@
 @mixin primary-button {
     color: white;
     font-family: "Muli", "Poppins", serif, sans-serif;
-    background-color: $primary-red;
+    background-color: $light-blue;
     padding: 4px 6px;
     text-transform: capitalize;
     border-radius: 2px;
-    border: 1px solid $primary-red;
+    border: 1px solid $light-blue;
     font-size: 13px;
     @include md{
         font-size: 14px;

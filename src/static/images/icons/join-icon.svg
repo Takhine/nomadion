@@ -26,12 +26,12 @@
     <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Rectangle_1915)">
       <rect id="Rectangle_1915-2" data-name="Rectangle 1915" width="54" height="83" transform="translate(40 6)" fill="#fff"/>
     </g>
-    <path id="Polygon_5" data-name="Polygon 5" d="M29,0,58,58H0Z" transform="translate(298 1129) rotate(90)" fill="#ff1e26"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M29,0,58,58H0Z" transform="translate(298 1129) rotate(90)" fill="#00a8e8"/>
     <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Polygon_6)">
       <path id="Polygon_6-2" data-name="Polygon 6" d="M18,0,36,36H0Z" transform="translate(45 24) rotate(90)" fill="#fff"/>
     </g>
     <g transform="matrix(1, 0, 0, 1, 231, 1110)" filter="url(#Rectangle_1916)">
-      <rect id="Rectangle_1916-2" data-name="Rectangle 1916" width="27" height="29" transform="translate(67 60)" fill="#ff1e26"/>
+      <rect id="Rectangle_1916-2" data-name="Rectangle 1916" width="27" height="29" transform="translate(67 60)" fill="#00a8e8"/>
     </g>
   </g>
 </svg>

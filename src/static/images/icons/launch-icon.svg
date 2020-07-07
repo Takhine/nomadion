@@ -16,7 +16,7 @@
     </filter>
   </defs>
   <g id="Group_1997" data-name="Group 1997" transform="translate(7714.951 -5450.177)">
-    <path id="Path_2354" data-name="Path 2354" d="M28.421,0,56.841,67.221s-14.21-8.948-28.421-8.948S0,67.221,0,67.221Z" transform="translate(-7660.722 5450.177) rotate(48)" fill="#ff1e26"/>
+    <path id="Path_2354" data-name="Path 2354" d="M28.421,0,56.841,67.221s-14.21-8.948-28.421-8.948S0,67.221,0,67.221Z" transform="translate(-7660.722 5450.177) rotate(48)" fill="#00a8e8"/>
     <g transform="matrix(1, 0, 0, 1, -7714.95, 5450.18)" filter="url(#Path_2355)">
       <path id="Path_2355-2" data-name="Path 2355" d="M15.491,0,30.983,36.64s-7.746-4.877-15.491-4.877S0,36.64,0,36.64Z" transform="translate(36.23 33) rotate(48)" fill="#fff"/>
     </g>

@@ -68,7 +68,7 @@
     padding-top: 24px;
     padding-bottom: 0;
     @include md {
-      background-color: $primary-red;
+      background-color: $light-blue;
       padding-top: 0;
       display: block;
       margin: unset;
@@ -114,7 +114,7 @@
         letter-spacing: 8px;
       }
       .dark-background{
-        background: #161616;
+        background: $dark-blue;
         height: inherit;
       }
     }

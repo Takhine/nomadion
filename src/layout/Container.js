@@ -36,7 +36,7 @@ export default function Container(props) {
         <Menu.Item key="1">Home</Menu.Item>
         <Menu.Item key="2">About Us</Menu.Item>
         <Menu.Item key="3">Our Work</Menu.Item>
-        <Menu.Item key="4" style={{backgroundColor: 'transparent'}}><Button className="contribute-button"><img src={people} alt="People Icon" /> Contribute</Button></Menu.Item>
+        <Menu.Item key="4" style={{backgroundColor: 'transparent'}}><Button style={dark?{backgroundColor: '#030127', border: '1px solid #030127'}:{fontWeight: 600}} className="contribute-button"><img src={people} alt="People Icon" /> Contact</Button></Menu.Item>
       </Menu>
     </Header>
     <Content>

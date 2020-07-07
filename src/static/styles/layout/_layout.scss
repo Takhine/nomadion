@@ -2,7 +2,7 @@
     background: unset;
     .dark-navbar{
         @include sub-section-container;
-        background-color: $dark-black;
+        background-color: $dark-blue;
         transition: background-color 0.4s ease-out;
         position: fixed;
         padding-top: 0;
@@ -14,6 +14,8 @@
         .logo-container{
             .logo{
                 width: 50px;
+                height: 50px;
+
             }
         }
         .nav-menu{
@@ -47,7 +49,8 @@
         transition: background-color 0.4s ease-out;
         .nav-menu{
             .ant-menu-item.ant-menu-item-only-child.ant-menu-item-selected{
-                color: $primary-red;
+                color: $dark-blue;
+                font-weight: 600;
             }
             .ant-menu-item.ant-menu-item-only-child{
                 color: $primary-black;
