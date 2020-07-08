@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Row, Col, Card } from "antd";
+import { Button, Row, Col, Card, Carousel } from "antd";
 import FadeIn from "react-fade-in";
 // Images
 import join from "static/images/icons/join-icon.svg";
@@ -42,12 +42,43 @@ export default function Header() {
           </div>
         </div>
         <img src={down} alt="Go Down" className="bottom-arrow" />
-        <div style={{display: 'none'}} className="fade-background" />
+        <div style={{ display: "none" }} className="fade-background" />
       </div>
       <div className="steps-container">
+        <Carousel autoplay className="steps-carousel">
+          <Card
+            hoverable={true}
+            className="step-card"
+            style={{ borderLeft: "none" }}
+          >
+            <img src={join} alt="Join" className="step-icon" />
+            <p className="step-description">
+              <b className="step-name">Join. </b>
+              We have exciting new projects tackling various domains
+            </p>
+          </Card>{" "}
+          <Card hoverable={true} className="step-card">
+            <img src={collaborate} alt="Collaborate" className="step-icon" />
+            <p className="step-description">
+              <b className="step-name">Collaborate. </b>
+              We're all about teamwork, work towards a shared goal
+            </p>
+          </Card>
+          <Card hoverable={true} className="step-card">
+            <img src={launch} alt="Launch" className="step-icon" />
+            <p className="step-description">
+              <b className="step-name">Launch. </b>
+              You've helped build something worth sharing with the world!
+            </p>
+          </Card>
+        </Carousel>
         <Row gutter={0} className="grid-parent">
           <Col className="grid-child" xs={24} md={8}>
-            <Card hoverable={true} className="step-card" style={{ borderLeft: "none" }}>
+            <Card
+              hoverable={true}
+              className="step-card"
+              style={{ borderLeft: "none" }}
+            >
               <img src={join} alt="Join" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Join. </b>

@@ -198,9 +198,29 @@
     }
   }
   .steps-container {
+    .steps-carousel{
+      display: block;
+      @include md{
+        display: none;
+      }
+      .slick-dots{
+        .slick-active{
+          button{
+            background: $light-blue;
+          }
+        }
+      }
+      .step-description{
+        margin: auto;
+      }
+    }
     .grid-parent {
+      display: none;
+      @include md{
+        display: flex;
+      }
       .grid-child {
-        .step-card {
+        @at-root .step-card {
           border: 1px solid #ffffff;
           background: transparent;
           border-radius: 0;
