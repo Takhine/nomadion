@@ -10,7 +10,7 @@
     }
         .header-content{
             position: relative;
-            @include msm {
+            @include md {
                 min-height: calc(100vh - 80px);
               }
             .header-row{
@@ -34,7 +34,7 @@
                     }
                     .main-description{
                         max-width: 400px;
-                        margin: 24px auto;
+                        margin: 24px 0;
                         margin-top: 0;
                         color: $text-grey;
                         font-weight: $light-font;
@@ -57,7 +57,9 @@
                         }
                     }
                     .tags-container{
-                        max-width: 250px;
+                        @include rwd(250, 380){
+                          max-width: 250px;
+                        }
                         @include mmd{
                             max-width: unset;
                         }

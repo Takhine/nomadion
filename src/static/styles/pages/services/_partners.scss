@@ -17,5 +17,42 @@
                 font-size: 28px;
             }
         }
+        .images-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            @include msm{
+                flex-direction: row;
+            }
+            .image-container{
+                height: 250px;
+                @include msm{
+                    height: unset;
+                }
+                .partner-link{
+                    transition: $transition-main;
+                    &:hover{
+                        opacity: 0.8;
+                        .partner-image{
+                            transform: scale(1.2);
+                            transition: $transition-main;
+                        }
+                    }
+                    .partner-image{
+                        max-width: 250px;
+                        transform: scale(1);
+                        transition: $transition-main;
+                        width: 100%;
+                        @include msm{
+                            max-width: 150px;
+                        }
+                        @include md{
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -21,20 +21,45 @@
             .service-row{
                 margin: 32px 0;
                 .service-col{
+                    margin-bottom: 8px;
+                    .eCommerce{
+                        margin: auto;
+                        @include md{
+                            max-width: 500px;
+                        }
+                    }
+                    .bCards{
+                        @include md{
+                            max-width: 550px;
+                        }
+                    }
+                    .apps{
+                        @include md{
+                            max-width: 600px;
+                        }
+                    }
                     .white-card{
                         @include card(white, black, $light-blue);
                     }
                     .blue-card{
                         @include card($light-blue, white, white);
                     }
+                    .rightAlign{
+                        @include md{
+                            margin-left: auto;
+                        }
+                    }
                     .service-card{
+                        height: 100%;
                         .ant-card-body{
-                            min-height: 250px;
+                            min-height: 200px;
+                            height: 100%;
                         }
                         .service-name{
                             text-align: center;
                             color: inherit;
                             font-size: 14px;
+                            margin-bottom: 24px;
                             @include md {
                               font-size: 16px;
                             }
@@ -43,7 +68,9 @@
                             }
                         }
                         .service-description{
-
+                            p{
+                                color: $dark-blue;
+                            }
                         }
                     }
 
