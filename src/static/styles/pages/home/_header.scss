@@ -186,7 +186,7 @@
         margin-top: 32px;
       }
       .join-button {
-        @include primary-button;
+        @include primary-button($light-blue);
         margin-right: 4px;
         @include md {
           margin-right: 12px;
@@ -222,6 +222,7 @@
       .grid-child {
         @at-root .step-card {
           border: 1px solid #ffffff;
+          border-bottom: none;
           background: transparent;
           border-radius: 0;
           border-right: none;

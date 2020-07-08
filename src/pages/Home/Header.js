@@ -46,25 +46,21 @@ export default function Header() {
       </div>
       <div className="steps-container">
         <Carousel autoplay className="steps-carousel">
-          <Card
-            hoverable={true}
-            className="step-card"
-            style={{ borderLeft: "none" }}
-          >
+          <Card className="step-card" style={{ borderLeft: "none" }}>
             <img src={join} alt="Join" className="step-icon" />
             <p className="step-description">
               <b className="step-name">Join. </b>
               We have exciting new projects tackling various domains
             </p>
           </Card>{" "}
-          <Card hoverable={true} className="step-card">
+          <Card className="step-card">
             <img src={collaborate} alt="Collaborate" className="step-icon" />
             <p className="step-description">
               <b className="step-name">Collaborate. </b>
               We're all about teamwork, work towards a shared goal
             </p>
           </Card>
-          <Card hoverable={true} className="step-card">
+          <Card className="step-card">
             <img src={launch} alt="Launch" className="step-icon" />
             <p className="step-description">
               <b className="step-name">Launch. </b>
@@ -74,11 +70,7 @@ export default function Header() {
         </Carousel>
         <Row gutter={0} className="grid-parent">
           <Col className="grid-child" xs={24} md={8}>
-            <Card
-              hoverable={true}
-              className="step-card"
-              style={{ borderLeft: "none" }}
-            >
+            <Card className="step-card" style={{ borderLeft: "none" }}>
               <img src={join} alt="Join" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Join. </b>
@@ -87,7 +79,7 @@ export default function Header() {
             </Card>
           </Col>
           <Col className="grid-child" xs={24} md={8}>
-            <Card hoverable={true} className="step-card">
+            <Card className="step-card">
               <img src={collaborate} alt="Collaborate" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Collaborate. </b>
@@ -96,7 +88,7 @@ export default function Header() {
             </Card>
           </Col>
           <Col className="grid-child" xs={24} md={8}>
-            <Card hoverable={true} className="step-card">
+            <Card className="step-card">
               <img src={launch} alt="Launch" className="step-icon" />
               <p className="step-description">
                 <b className="step-name">Launch. </b>

@@ -38,7 +38,7 @@
                 background-color: transparent;
             }
             .contribute-button{
-                @include rounded-primary-button;
+                @include rounded-primary-button($light-blue);
                 padding: 2px 13px !important;
                 height: 30px !important;
                 img{
@@ -79,6 +79,10 @@
     .footer{
         background-color: $dark-black;
         color: white;
+        font-size: 12px;
+        @include msm{
+            font-size: 16px;
+        }
         .heart{
             width: 20px;
             margin: 0 2px;

@@ -18,7 +18,7 @@ export default function Header() {
             <FadeIn delay="300">
               <h3 className="main-description">
                 You can count on us for a multitude of services. Apart from our
-                niche in software development we count on our trusted partners
+                niche in software development we bring in our trusted partners
                 and vouch for their excellence in areas of expertise other than
                 our own.
               </h3>

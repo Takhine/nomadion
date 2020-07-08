@@ -1,21 +1,104 @@
-#homepage{
-    .about-section{
-        background-color: white;
-        min-height: 100vh;
-        @include sub-section-container;
-        .heading{
-            color: $dark-blue;
-            margin: 12px 0;
-            font-weight: 800;
-            font-size: 18px;
-            text-align: center;
-            @include md {
-              font-size: 22px;
-              margin-bottom: 24px;
-            }
-            @include xl{
-                font-size: 28px;
-            }
-        }
+#homepage {
+  .about-section {
+    background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    .heading {
+      color: $dark-blue;
+      margin: 12px 0;
+      font-weight: 800;
+      font-size: 18px;
+      @include msm {
+        text-align: center;
+      }
+      @include md {
+        font-size: 22px;
+        margin-bottom: 24px;
+        text-align: left;
+      }
+      @include xl {
+        font-size: 28px;
+      }
     }
+    .about-grid {
+      .grid-child {
+        .about-description {
+          font-size: 13px;
+          color: $dark-blue;
+          margin-bottom: 24px;
+          @include msm {
+            max-width: 560px;
+            font-size: 14px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 24px;
+          }
+          @include md {
+            max-width: 600px;
+            font-size: 16px;
+            text-align: left;
+            margin: unset;
+            margin-bottom: 24px;
+          }
+          @include xl {
+            font-size: 18px;
+          }
+        }
+        .projects-button {
+          @include primary-button($dark-blue);
+          @include msm {
+            display: flex;
+            margin: auto;
+          }
+          @include md {
+            display: block;
+            margin: unset;
+          }
+        }
+      }
+      .description-col {
+        padding: 32px 0;
+        @include column-container;
+        @include md{
+            padding-top: 48px;
+        }
+      }
+      .graphic-col {
+        background-color: $light-blue;
+        .cycle-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          @include column-container;
+          padding: 32px 12px;
+          @include md {
+            padding: 48px 0;
+          }
+          .cycle {
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 24px;
+            @include md {
+              margin-bottom: 32px;
+            }
+          }
+          .cycle-description {
+            font-size: 12px;
+            text-align: center;
+            margin: auto;
+            font-weight: 300;
+            opacity: 0.8;
+            @include msm {
+              max-width: 560px;
+              font-size: 14px;
+            }
+            @include md {
+              max-width: 600px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

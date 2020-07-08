@@ -6,10 +6,11 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 
 import Container from "./layout/Container";
-
+import ScrollToTop from 'components/ScrollToTop';
 function App() {
   return (
     <Router>
+    <ScrollToTop />
       <Container>
         <Switch>
           <Route path="/" exact={true} component={Home} />
