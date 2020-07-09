@@ -15,5 +15,63 @@
                 font-size: 28px;
             }
         }
+        .process-container{
+            .first-card{
+                background: white;
+                border-radius: 4px;
+                box-shadow: $main-box-shadow;
+                border: 1px solid white;
+                .ant-card-body{
+                    padding: 12px;
+                }
+                .process-card{
+                    padding: 0;
+                }
+                .process-heading{
+                    color: $dark-blue;
+                }
+            }
+            .process-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 12px;
+                margin-bottom: 18px;
+                &:hover{
+                    transition: $transition-main;
+                    .process-image{
+                        transform: scale(1.1);
+                    }
+                }
+                .process-image{
+                    transition: $transition-main;
+                    max-width: 150px;
+                    margin: auto;
+                    margin-bottom: 24px;
+                }
+                .process-heading{
+                    font-weight: 600;
+                    letter-spacing: 1.2px;
+                    text-align: center;
+                    width: 100%;
+                    margin: auto;
+                    font-size: 16px;
+                    @include msm{
+                        font-size: 18px;
+                    }
+                    @include md{
+                        font-size: 24px;
+                    }
+                }
+                .contact-button{
+                    @include primary-button($dark-blue);
+                    margin-top: 12px;
+                    @include md{
+                        margin-top: 24px;
+                    }
+                }
+            }
+        }
     }
 }
