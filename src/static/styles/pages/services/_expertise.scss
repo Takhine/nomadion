@@ -43,6 +43,9 @@
                     }
                     .blue-card{
                         @include card($light-blue, white, white);
+                        .service-description{
+                            color: white;
+                        }
                     }
                     .rightAlign{
                         @include md{

@@ -12,13 +12,14 @@ export default function Partners() {
       <div className="images-container">
         <div className="image-container">
           <a href="http://omegadigitallabs.com/" rel="noopener noreferrer" target="_blank" className="partner-link">
-            <img className="partner-image" src={odl} alt="Omega Digital Labs" />
+            <img className="partner-image" name="social-media" src={odl} alt="Omega Digital Labs" />
           </a>
         </div>
         <div className="image-container">
           <a href="https://giriconsultancy.in/" rel="noopener noreferrer" target="_blank" className="partner-link">
             <img
               className="partner-image"
+              name="recruitment"
               src={gcs}
               alt="Giri Consultancy Services"
             />
@@ -26,7 +27,7 @@ export default function Partners() {
         </div>
         <div className="image-container">
           <a href="https://www.marketwithmaddy.com/" rel="noopener noreferrer" target="_blank" className="partner-link">
-            <img className="partner-image" src={mwm} alt="Market with Maddy" />
+            <img className="partner-image" name="startup" src={mwm} alt="Market with Maddy" />
           </a>
         </div>
       </div>

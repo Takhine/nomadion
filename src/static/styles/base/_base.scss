@@ -30,3 +30,16 @@ h1,h2,h3,h4,h5,h6,p{
   ::-webkit-scrollbar-thumb:hover {
     background: $light-blue; 
   }
+
+  .back-to-top{
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    border: 1px solid $light-blue;
+    display: flex;
+    justify-content: center;
+    box-shadow: $main-box-shadow;
+    img{
+      transform: rotate(-90deg);
+    }
+  }
