@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Row, Col, Card, Carousel } from "antd";
+import { Link } from "react-scroll";
 import FadeIn from "react-fade-in";
 // Images
 import join from "static/images/icons/join-icon.svg";
@@ -38,7 +39,16 @@ export default function Header() {
           </FadeIn>
           <div className="buttons-container">
             <Button className="join-button">Join Live Project</Button>
+            <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
             <Button className="more-button">Learn More</Button>
+            </Link>
           </div>
         </div>
         <img src={down} alt="Go Down" className="bottom-arrow" />

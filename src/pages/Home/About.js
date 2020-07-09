@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Row, Col } from "antd";
-import FadeIn from "react-fade-in";
 import { NavLink } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 // Images
 import cycle from "static/images/media/cycle.svg";
@@ -11,8 +11,8 @@ export default function About() {
     <div className="about-section">
       <Row gutter={0} className="about-grid">
         <Col className="grid-child description-col" xs={24} md={12}>
-          <h2 className="heading">About us</h2>
-          <FadeIn delay="300">
+          <h2 className="heading" name="about">About us</h2>
+          <Fade>
             <p className="about-description">
               In a world that is rapidly becoming defined by change, value can
               only come from managing a multitude of change processes, seizing
@@ -21,7 +21,7 @@ export default function About() {
               ‘team of teams’. This <b>‘People Model’</b> is what we employ at
               Nomadion.
             </p>
-          </FadeIn>
+          </Fade>
           <NavLink exact to="/projects-by-nomadion">
             <Button className="projects-button">View Projects</Button>
           </NavLink>
@@ -29,10 +29,12 @@ export default function About() {
         <Col className="grid-child graphic-col" xs={24} md={12}>
           <div className="cycle-container">
             <img className="cycle" src={cycle} alt="Nomadion Process Cycle" />
-            <p className="cycle-description">
-              At Nomadion, we’re a part of a constellation of interconnected
-              teams that come together around specific goals.
-            </p>
+            <Fade bottom>
+              <p className="cycle-description">
+                At Nomadion, we’re a part of a constellation of interconnected
+                teams that come together around specific goals.
+              </p>
+            </Fade>
           </div>
         </Col>
       </Row>
