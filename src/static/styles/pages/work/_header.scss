@@ -1,0 +1,57 @@
+#workpage{
+    .header{
+        background: white;
+        min-height: 50vh;
+        @include sub-section-container;
+        padding-top: 80px;
+        @include msm{
+            padding-top: 150px;
+        }
+        .main-title{
+            letter-spacing: 2px;
+            width: fit-content;
+            font-weight: 800;
+            color: $dark-black;
+            margin: 24px auto;
+            @include msm {
+              font-size: 48px;
+              margin: unset;
+            }
+            @include md {
+              font-size: 60px;
+              letter-spacing: 4px;
+            }
+            @include xl {
+              font-size: 80px;
+              letter-spacing: 3px;
+            }
+        }
+        .description{
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            color: $light-black;
+            font-weight: $light-font;
+            letter-spacing: 1px;
+            font-size: 13px;
+            @include msm {
+              max-width: 560px;
+              font-size: 14px;
+              margin: unset;
+              text-align: left;
+              margin-bottom: 32px;
+            }
+            @include md {
+              max-width: 600px;
+              font-size: $title-font;
+            }
+            @include xl {
+              max-width: 700px;
+              font-size: 24px;
+            }
+            @include xxl {
+              max-width: 1100px;
+            }
+        }
+    }
+}

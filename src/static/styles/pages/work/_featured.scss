@@ -1,0 +1,152 @@
+.featured{
+    color: white;
+}
+
+.projects-navigation{
+    .ant-affix{
+        top: 50px !important;
+        border-top: 1px solid #f0f0f0;
+    }
+    .projects-menu{
+        @include sub-section-container;
+        padding-bottom: 0;
+        padding-top: 4px;
+        li{
+            font-size: 12px;
+            color: $dark-blue;
+            font-weight: 600;
+            @include msm{
+                font-size: 16px;
+            }
+            @include mmd{
+                font-size: 18px;
+            }
+            &.ant-menu-item-selected{
+                color: $light-blue;
+                border-bottom: 4px solid $light-blue;
+            }
+        }
+    }
+}
+.featured-content{
+    @include sub-section-container;
+    .featured-block{
+        margin-top: 24px;
+        .featured-description{
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            color: $text-grey;
+            font-weight: $light-font;
+            letter-spacing: 1px;
+            font-size: 12px;
+            @include msm {
+              max-width: 560px;
+              font-size: 13px;
+              margin: unset;
+              text-align: left;
+              margin-bottom: 32px;
+            }
+            @include md {
+              max-width: 600px;
+              font-size: 16px;
+            }
+            @include xl {
+              max-width: 700px;
+              font-size: 20px;
+            }
+            @include xxl {
+              max-width: 1100px;
+            }
+        }
+        .tags-row{
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            @include msm{
+                justify-content: flex-start;
+            }
+            .tag{
+                cursor: pointer;
+                margin-bottom: 8px;
+            }
+            .blue-tag{
+                background-color: $light-blue;
+                color: white;
+                border: 1px solid $light-blue
+            }
+        }
+
+        .project-card{
+            @include card(white, black, $light-blue);
+        }
+        .project-name{
+            color: white;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 12px;
+            @include md {
+              max-width: 600px;
+              font-size: 18px;
+              margin-bottom: 24px;
+            text-align: left;
+            }
+            @include xl {
+              font-size: 24px;
+            }
+        }
+        .project-description{
+            color: $text-grey;
+            font-weight: $light-font;
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 24px;
+            @include msm {
+              font-size: 13px;
+              margin: unset;
+              margin-bottom: 24px;
+              text-align: left;
+            }
+            @include md {
+              font-size: 16px;
+            }
+            @include xl {
+              font-size: 18px;
+            }
+
+        }
+        .project-button{
+            @include primary-button($light-blue);
+            display: flex;
+            margin: auto;
+            margin-bottom: 24px;
+            @include mmd{
+                margin: unset;
+            }
+        }
+        .initiative-container{
+            .initiative-row{
+                flex-direction: column-reverse;
+                @include mmd{
+                    flex-direction: row;
+                }
+                .initiative-content{
+                    padding-left: 12px !important;
+                    @include mmd{
+                        padding-left: 32px !important;
+                    }
+                }
+            }
+            .initiative-card{
+                text-align: center;
+                img{
+                    width: 100%;
+                    max-width: 230px;
+                }
+            }
+        }
+    }
+}
