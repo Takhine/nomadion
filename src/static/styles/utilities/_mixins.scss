@@ -172,3 +172,8 @@
         color: $color;
     }
 }
+
+@mixin plain-card{
+    @include card(white, $dark-black, white);
+    background-color: white;
+}

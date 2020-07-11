@@ -30,6 +30,10 @@
 }
 .featured-content{
     @include sub-section-container;
+    padding-bottom: 24px;
+    @include md{
+        padding-bottom: 120px;
+    }
     .featured-block{
         margin-top: 24px;
         .featured-description{
@@ -40,12 +44,14 @@
             font-weight: $light-font;
             letter-spacing: 1px;
             font-size: 12px;
+            margin-bottom: 12px;
+
             @include msm {
               max-width: 560px;
               font-size: 13px;
               margin: unset;
               text-align: left;
-              margin-bottom: 32px;
+              margin-bottom: 24px;
             }
             @include md {
               max-width: 600px;
@@ -78,7 +84,11 @@
         }
 
         .project-card{
-            @include card(white, black, $light-blue);
+            @include plain-card;
+            height: 100%;
+            .ant-card-body{
+                height: 100%;
+            }
         }
         .project-name{
             color: white;
@@ -142,9 +152,51 @@
             }
             .initiative-card{
                 text-align: center;
+                @include card(white, $dark-blue, $light-blue);
                 img{
                     width: 100%;
                     max-width: 230px;
+                }
+            }
+        }
+        .startups-container, .live-container{
+            @extend .initiative-container;
+            .live-row, .startup-row{
+                flex-direction: column-reverse;
+                @include mmd{
+                    flex-direction: row;
+                }
+                .startup-content, .live-content{
+                    padding-left: 12px !important;
+                    @include mmd{
+                        padding-left: 32px !important;
+                    }
+                }
+            }
+            .startup-card, .live-card{
+                text-align: center;
+                img{
+                    width: 100%;
+                    max-width: 230px;
+                }
+            }
+            .startup-card{
+               .ant-card-body{
+                   display:flex;
+                   justify-content: center;
+                   align-items:center;
+               }
+            }
+            .eventgrab{
+                background-color: $light-blue;
+                .ant-card-body{
+                    background-color: $light-blue;
+                }
+            }
+            .grassbox{
+                background-color: #1d1d1d;
+                .ant-card-body{
+                    background-color: #1d1d1d;
                 }
             }
         }
