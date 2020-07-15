@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // Components
-import { Layout, Menu, Button } from "antd";
+import { Layout, Menu, Dropdown, Button } from "antd";
 import "static/styles/main.scss";
 import people from "static/images/icons/people-icon.svg";
 import logo from "static/images/media/logo.svg";
@@ -10,6 +10,8 @@ import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router";
 // Images
 import pointer from "static/images/icons/pointer.svg";
+import darkMenu from "static/images/icons/close-icon.svg";
+import lightMenu from "static/images/icons/menu-icon.svg";
 
 const { Header, Content, Footer } = Layout;
 
@@ -26,6 +28,35 @@ function Container(props) {
       setTheme(true);
     }
   };
+
+  const menu = (
+    <Menu className="floating-menu">
+      <Menu.Item>
+        <NavLink exact to="/" activeClassName="selected">
+          Home
+        </NavLink>
+      </Menu.Item>
+      <Menu.Item>
+        <NavLink exact to="/nomadion-services" activeClassName="selected">
+          Services
+        </NavLink>
+      </Menu.Item>
+      <Menu.Item>
+        <NavLink exact to="/projects-by-nomadion" activeClassName="selected">
+          Our Work
+        </NavLink>
+      </Menu.Item>
+      <Menu.Item>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.tmall.com/"
+        >
+          Contact
+        </a>
+      </Menu.Item>
+    </Menu>
+  );
   return (
     <Layout className="layout">
       <Header id="nav" className="dark-navbar">
@@ -47,6 +78,18 @@ function Container(props) {
             />
           </NavLink>
         </div>
+        <Dropdown overlay={menu} placement="bottomLeft" arrow>
+          {dark ? (
+            <Button className="menu-button">
+              <img src={darkMenu} alt="Menu" />
+            </Button>
+          ) : (
+            <Button className="menu-button">
+              <img src={lightMenu} alt="Menu" />
+            </Button>
+          )}
+        </Dropdown>
+
         <Menu className="nav-menu" theme="dark" mode="horizontal">
           <Menu.Item key="1">
             <NavLink exact to="/" activeClassName="selected">
