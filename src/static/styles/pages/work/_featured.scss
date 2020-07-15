@@ -38,8 +38,6 @@
         margin-top: 24px;
         .featured-description{
             max-width: 400px;
-            margin: auto;
-            text-align: center;
             color: $text-grey;
             font-weight: $light-font;
             letter-spacing: 1px;
@@ -68,7 +66,6 @@
         .tags-row{
             margin-bottom: 8px;
             display: flex;
-            justify-content: center;
             @include msm{
                 justify-content: flex-start;
             }
@@ -85,9 +82,19 @@
 
         .project-card{
             @include plain-card;
+            max-height: 270px;
             height: 100%;
             .ant-card-body{
                 height: 100%;
+                text-align: center;
+                padding: 12px;
+                @include mmd{
+                    padding: 24px;
+                }
+                img{
+                    height: 100%;
+                    width: inherit;
+                }
             }
         }
         .project-name{
@@ -95,12 +102,11 @@
             margin-bottom: 12px;
             font-size: 16px;
             font-weight: 400;
-            text-align: center;
             margin-top: 12px;
             @include md {
               max-width: 600px;
               font-size: 18px;
-              margin-bottom: 24px;
+              margin-bottom: 8px;
             text-align: left;
             }
             @include xl {
@@ -111,7 +117,6 @@
             color: $text-grey;
             font-weight: $light-font;
             letter-spacing: 1px;
-            text-align: center;
             font-size: 12px;
             margin-bottom: 24px;
             @include msm {
@@ -131,10 +136,13 @@
         .project-button{
             @include primary-button($light-blue);
             display: flex;
-            margin: auto;
             margin-bottom: 24px;
             @include mmd{
                 margin: unset;
+            }
+            img{
+                height: 100%;
+                margin-right: 8px;
             }
         }
         .initiative-container{
@@ -151,7 +159,6 @@
                 }
             }
             .initiative-card{
-                text-align: center;
                 @include card(white, $dark-blue, $light-blue);
                 img{
                     width: 100%;
@@ -174,7 +181,7 @@
                 }
             }
             .startup-card, .live-card{
-                text-align: center;
+
                 img{
                     width: 100%;
                     max-width: 230px;
@@ -185,6 +192,9 @@
                    display:flex;
                    justify-content: center;
                    align-items:center;
+                   img{
+                       height: auto;
+                   }
                }
             }
             .eventgrab{

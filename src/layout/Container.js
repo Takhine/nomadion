@@ -9,12 +9,12 @@ import heart from "static/images/media/heart.png";
 import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router";
 // Images
-import pointer from 'static/images/icons/pointer.svg';
+import pointer from "static/images/icons/pointer.svg";
 
 const { Header, Content, Footer } = Layout;
 
 function Container(props) {
-  const {pathname} = props.location;
+  const { pathname } = props.location;
   const [dark, setTheme] = useState(false);
   window.onscroll = () => {
     const nav = document.querySelector("#nav");
@@ -27,42 +27,52 @@ function Container(props) {
     }
   };
   return (
-    <Layout className="layout" style={{ background: "unset" }}>
+    <Layout className="layout">
       <Header id="nav" className="dark-navbar">
         <div className="logo-container">
-          <img
-            className="logo"
-            style={dark ? { display: "block" } : { display: "none" }}
-            src={darkLogo}
-            alt="Nomadion"
-          />
-          <img
-            className="logo"
-            style={dark ? { display: "none" } : { display: "block" }}
-            src={logo}
-            alt="Nomadion"
-          />
+          <NavLink exact to="/">
+            <img
+              className="logo"
+              style={dark ? { display: "block" } : { display: "none" }}
+              src={darkLogo}
+              alt="Nomadion"
+            />
+          </NavLink>
+          <NavLink exact to="/">
+            <img
+              className="logo"
+              style={dark ? { display: "none" } : { display: "block" }}
+              src={logo}
+              alt="Nomadion"
+            />
+          </NavLink>
         </div>
-        <Menu
-          className="nav-menu"
-          theme="dark"
-          mode="horizontal"
-        >
+        <Menu className="nav-menu" theme="dark" mode="horizontal">
           <Menu.Item key="1">
             <NavLink exact to="/" activeClassName="selected">
-            {pathname==="/" && <img className="pointer" src={pointer} alt="Nomadion Service" />}
+              {pathname === "/" && (
+                <img className="pointer" src={pointer} alt="Nomadion Service" />
+              )}
               Home
             </NavLink>
           </Menu.Item>
           <Menu.Item key="2">
             <NavLink exact to="/nomadion-services" activeClassName="selected">
-            {pathname==="/nomadion-services" && <img className="pointer" src={pointer} alt="Nomadion Service" />}
+              {pathname === "/nomadion-services" && (
+                <img className="pointer" src={pointer} alt="Nomadion Service" />
+              )}
               Services
             </NavLink>
           </Menu.Item>
           <Menu.Item key="3">
-            <NavLink exact to="/projects-by-nomadion" activeClassName="selected">
-            {pathname==="/projects-by-nomadion" && <img className="pointer" src={pointer} alt="Nomadion Service" />}
+            <NavLink
+              exact
+              to="/projects-by-nomadion"
+              activeClassName="selected"
+            >
+              {pathname === "/projects-by-nomadion" && (
+                <img className="pointer" src={pointer} alt="Nomadion Service" />
+              )}
               Our Work
             </NavLink>
           </Menu.Item>
@@ -89,4 +99,4 @@ function Container(props) {
   );
 }
 
-export default withRouter(Container)
+export default withRouter(Container);

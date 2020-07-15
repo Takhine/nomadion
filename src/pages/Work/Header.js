@@ -4,9 +4,12 @@ import FadeIn from "react-fade-in";
 export default function Header() {
   return (
     <div className="header">
-      <h1 className="main-title">
-        Our Building Blocks<b style={{ color: "#00A8E8" }}>.</b>{" "}
-      </h1>
+      <FadeIn transitionDuration="800">
+        <h1 className="main-title">
+          Our Building Blocks<b style={{ color: "#00A8E8" }}>.</b>{" "}
+        </h1>
+      </FadeIn>
+
       <FadeIn delay="400">
         <p className="description">
           We're normal people (developers, designers, businesspeople and

@@ -81,6 +81,8 @@
     .year {
       display: block;
       font-size: 10px;
+      font-weight: 600;
+      padding-top: 10px;
       margin-left: 1px;
       margin-bottom: -8px;
       letter-spacing: 1.4px;
@@ -114,11 +116,13 @@
         letter-spacing: 4px;
       }
       @include xl {
-        font-size: 140px;
+        font-size: 130px;
         letter-spacing: 8px;
       }
       .dark-background{
         background: $dark-blue;
+        background-image: $topgraphy-image;
+        padding-top: 10px;
         height: inherit;
       }
     }

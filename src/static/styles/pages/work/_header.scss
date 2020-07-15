@@ -12,7 +12,7 @@
             width: fit-content;
             font-weight: 800;
             color: $dark-black;
-            margin: 24px auto;
+            margin: 24px 0;
             @include msm {
               font-size: 48px;
               margin: unset;
@@ -29,7 +29,6 @@
         .description{
             max-width: 400px;
             margin: auto;
-            text-align: center;
             color: $light-black;
             font-weight: $light-font;
             letter-spacing: 1px;

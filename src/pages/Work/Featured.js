@@ -25,21 +25,19 @@ const StartupsContent = () => {
             <h4 className="project-name">Eventgrab</h4>
             <Fade>
               <div className="project-description">
-                Here at Eventgrab, we are devoted to ensuring that any event you
-                plan is a triumphant success. This project started out as an
+                This project started out as an
                 elementary collaboration between event hosts, us, and equipment
-                vendors. However, it has fast become a complex and
-                interconnected network of event hosting personnel, now equipped
-                with an online platform to easily facilitate the renting and
-                managing of event equipment that ranges from smaller
-                gadgets/appliances like speakers and microphones to heavy duty
-                equipment like furniture and infrastructure.
+                vendors and fast become a complex and interconnected network of
+                event hosting personnel, now equipped with an online platform to
+                easily facilitate the renting and managing of event equipment..
               </div>
             </Fade>
+            <a href="https://eventgrab.com/" target="_blank" rel="noopener noreferrer">
             <Button className="project-button">Visit Website</Button>
+            </a>
           </Col>
         </Row>
-        <Divider style={{borderTop: '1px solid #00A8E8'}} />
+        <Divider style={{ borderTop: "1px solid #00A8E8" }} />
         <Row gutter={16} className="startup-row">
           <Col xs={24} md={12}>
             <Card className="project-card startup-card grassbox">
@@ -57,9 +55,11 @@ const StartupsContent = () => {
                 developing the football base in India.
               </div>
             </Fade>
+            <a href="https://www.facebook.com/grassboxfootball/"  target="_blank" rel="noopener noreferrer">
             <Button className="project-button">
-              <img src={people} alt="People Icon" /> Learn More
-            </Button>
+            <img src={people} alt="People Icon" /> Learn More
+          </Button> 
+            </a>
           </Col>
         </Row>
       </div>
@@ -107,9 +107,11 @@ const ProjectsContent = () => {
           <h4 className="project-name">Copia</h4>
           <Fade>
             <div className="project-description">
-              You care about giving back to the world? We're really interested
-              in working with you on our upcoming project.{" "}
-              <b style={{ color: "#00A8E8" }}>Let's Connect</b>!
+              Copia, is an inspired project that is driven towards creating
+              easier access to resources and refining workplace efficiency
+              through the establishment of vending machines that dispense a wide
+              range of equipment, from something as elementary as a notebooks,
+              to devices as complex as arduino minis.
             </div>
           </Fade>
           <Button className="project-button">

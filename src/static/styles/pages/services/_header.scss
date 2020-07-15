@@ -1,5 +1,12 @@
-#services-page{
-    .header{
+#services-page {
+  .header {
+    height: calc(100vh - 80px);
+    @include md {
+      height: calc(100vh - 120px);
+    }
+    @include xl {
+      height: calc(100vh - 110px);
+    }
     @include sub-section-container;
     margin-top: 80px;
     @include md {
@@ -8,105 +15,104 @@
     @include xl {
       margin-top: 110px;
     }
-        .header-content{
-            position: relative;
-            @include md {
-                min-height: calc(100vh - 200px);
-              }
-            .header-row{
-                .content-column{
-                    .main-title{
-                        font-size: 22px;
-                        letter-spacing: 2px;
-                        width: fit-content;
-                        font-weight: 800;
-                        @include msm {
-                          font-size: 28px;
-                        }
-                        @include md {
-                          font-size: 50px;
-                          letter-spacing: 4px;
-                        }
-                        @include xl {
-                          font-size: 100px;
-                          letter-spacing: 8px;
-                        }
-                    }
-                    .main-description{
-                        max-width: 400px;
-                        margin: 24px 0;
-                        margin-top: 0;
-                        color: $text-grey;
-                        font-weight: $light-font;
-                        letter-spacing: 1px;
-                        font-size: 13px;
-                        @include msm {
-                          max-width: 560px;
-                          font-size: 14px;
-                        }
-                        @include md {
-                          max-width: 600px;
-                          font-size: $title-font;
-                        }
-                        @include xl {
-                          max-width: 700px;
-                          font-size: 20px;
-                        }
-                        @include xxl {
-                          max-width: 1100px;
-                        }
-                    }
-                    .tags-container{
-                        @include rwd(250, 380){
-                          max-width: 250px;
-                        }
-                        @include mmd{
-                            max-width: unset;
-                        }
-                        .tags-row{
-                            margin-bottom: 8px;
-                            .tag{
-                                cursor: pointer;
-                                margin-bottom: 8px;
-                            }
-                            .blue-tag{
-                                background-color: $light-blue;
-                                color: white;
-                                border: 1px solid $light-blue
-                            }
-                            .white-tag{
-
-                            }
-                            .bordered-tag{
-                                background-color: transparent;
-                                color: white;
-                                border: 1px solid $light-blue;
-                            }
-                            .primary-tag{
-                                color: $light-blue;
-                                border-bottom: 1px solid $light-blue;
-                            }
-                        }
-                    }
-                }
-                .image-column{
-                    .image-container{
-                        justify-content: center;
-                        display: none;
-                        @include mmd{
-                            display: flex;
-                            justify-content: flex-end;
-                        }
-                        .header-image{
-                            width: 100%;
-                            max-width: 250px;
-                            @include mmd{
-                                max-width: 450px;
-                            }
-                        }
-                    }
-                }
+    .header-content {
+      position: relative;
+      @include md {
+        min-height: calc(100vh - 200px);
+      }
+      .header-row {
+        .content-column {
+          .main-title {
+            font-size: 22px;
+            letter-spacing: 2px;
+            width: fit-content;
+            font-weight: 800;
+            @include msm {
+              font-size: 28px;
             }
+            @include md {
+              font-size: 50px;
+              letter-spacing: 4px;
+            }
+            @include xl {
+              font-size: 100px;
+              letter-spacing: 8px;
+            }
+          }
+          .main-description {
+            max-width: 400px;
+            margin: 24px 0;
+            margin-top: 0;
+            color: $text-grey;
+            font-weight: $light-font;
+            letter-spacing: 1px;
+            font-size: 13px;
+            @include msm {
+              max-width: 560px;
+              font-size: 14px;
+            }
+            @include md {
+              max-width: 600px;
+              font-size: $title-font;
+            }
+            @include xl {
+              max-width: 700px;
+              font-size: 20px;
+            }
+            @include xxl {
+              max-width: 1100px;
+            }
+          }
+          .tags-container {
+            @include rwd(250, 380) {
+              max-width: 250px;
+            }
+            @include mmd {
+              max-width: unset;
+            }
+            .tags-row {
+              margin-bottom: 8px;
+              .tag {
+                cursor: pointer;
+                margin-bottom: 8px;
+              }
+              .blue-tag {
+                background-color: $light-blue;
+                color: white;
+                border: 1px solid $light-blue;
+              }
+              .white-tag {
+              }
+              .bordered-tag {
+                background-color: transparent;
+                color: white;
+                border: 1px solid $light-blue;
+              }
+              .primary-tag {
+                color: $light-blue;
+                border-bottom: 1px solid $light-blue;
+              }
+            }
+          }
         }
+        .image-column {
+          .image-container {
+            justify-content: center;
+            display: none;
+            @include mmd {
+              display: flex;
+              justify-content: flex-end;
+            }
+            .header-image {
+              width: 100%;
+              max-width: 250px;
+              @include mmd {
+                max-width: 450px;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
